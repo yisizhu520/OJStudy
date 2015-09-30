@@ -28,9 +28,8 @@ public class Chorus {
         System.out.print("请输入任意字符串: ");
         //创建输入对象
         Scanner sc=new Scanner(System.in);
-        String input = sc.nextLine();
-        String[] tokens = input.split(" ");
+        int n = sc.nextInt();
+        //TODO 这个现在不会做
 
-        System.out.println(tokens[tokens.length-1].length());
     }
 }
