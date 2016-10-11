@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArtOfProgramming/ArtOfProgramming.iml" filepath="$PROJECT_DIR$/ArtOfProgramming/ArtOfProgramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode/LeetCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NowCoder/NowCoder.iml" filepath="$PROJECT_DIR$/NowCoder/NowCoder.iml" />
       <module fileurl="file://$PROJECT_DIR$/OJStudy.iml" filepath="$PROJECT_DIR$/OJStudy.iml" />
     </modules>
   </component>
