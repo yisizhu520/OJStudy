@@ -58,36 +58,26 @@ public class PalindromePartitioning {
             }
         }
 
-        public boolean isPalindrome(String a, int start, int end) {
-            int mid = (start + end) / 2;
-            for (int i = start; i < mid; i++) {
-                if (a.charAt(i) != a.charAt(end - i)) {
+        public boolean isPalindrome(String s,int start,int end)
+        {
+            if(s==""||s.length()==0||start>end||start<0||end>s.length()-1)
+                return false;
+            if(start==end)
+                return true;
+            int i=start;
+            int j=end;
+            while(i<=j)
+            {
+                if(s.charAt(i)!=s.charAt(j))
                     return false;
+                else
+                {
+                    i++;
+                    j--;
                 }
             }
             return true;
         }
-
-//        public boolean isPalindrome(String s,int start,int end)
-//        {
-//            if(s==""||s.length()==0||start>end||start<0||end>s.length()-1)
-//                return false;
-//            if(start==end)
-//                return true;
-//            int i=start;
-//            int j=end;
-//            while(i<=j)
-//            {
-//                if(s.charAt(i)!=s.charAt(j))
-//                    return false;
-//                else
-//                {
-//                    i++;
-//                    j--;
-//                }
-//            }
-//            return true;
-//        }
 
     }
 
