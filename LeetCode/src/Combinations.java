@@ -73,7 +73,7 @@ public class Combinations {
         }
 
         /**
-         * MARK 正确的递归解法，有点像8皇后
+         * MARK 正确的递归解法，有点像8皇后，回溯求解
          * @param result
          * @param list
          * @param k
