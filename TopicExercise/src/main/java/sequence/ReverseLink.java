@@ -32,6 +32,8 @@ public class ReverseLink {
         return pre;
     }
 
+    // TODO imp with recursion
+
     @Test
     public void testReverseLinkWhenNodeIsNull() {
         Node node = null;

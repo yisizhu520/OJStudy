@@ -4,7 +4,7 @@ package sequence;
 public class Node<T> {
 
     public T value;
-    public Node next;
+    public Node<T> next;
 
     public Node(T t) {
         if (t == null) throw new IllegalArgumentException("can not create empty value node");
@@ -19,7 +19,7 @@ public class Node<T> {
 
     public Node next(T t) {
         Node<T> node = new Node<>(t);
-        Node temp = this.next;
+        Node<T> temp = this.next;
         this.next = node;
         node.next = temp;
         return this;
@@ -38,7 +38,7 @@ public class Node<T> {
         return new Node<>(value);
     }
 
-    public static <T> Node of(T first, T... values) {
+    public static <T> Node<T> of(T first, T... values) {
         if (first == null) throw new IllegalArgumentException("can not create empty value node");
         Node<T> head = new Node<>(first);
         Node temp = head;
